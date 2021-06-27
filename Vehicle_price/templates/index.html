@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <form method="post">
+        {{ form.hidden_tag() }}
+        <h1>Welcome to the Car Price Prediction Website Page!</h1>
+        {{ form.Year.label }}{{ form.Year }}
+        <br>
+        {{ form.Present_Price.label }}{{ form.Present_Price }}
+        <br>
+        {{ form.Kms_Driven.label }}{{ form.Kms_Driven }}
+        <br>
+        {{ form.Owner.label }}{{ form.Owner }}
+        <br>
+        {{ form.Fuel_Type_Diesel.label }}{{ form.Fuel_Type_Diesel }}
+        <br>
+        {{ form.Fuel_Type_Petrol.label }}{{ form.Fuel_Type_Petrol }}
+        <br>
+        {{ form.Seller_Type_Individual.label }}{{ form.Seller_Type_Individual }}
+        <br>
+        {{ form.Transmission_Manual.label }}{{ form.Transmission_Manual }}
+        <br>
+        {{ form.Car_Name.label }}{{ form.Car_Name }}
+        <br>
+        <h3>A brief Description about the vehicle: </h3>
+        {{ form.Description }}
+        <br>
+        {{ form.Submit() }}
+      </form>
+    </div>
+  </body>
+</html>
